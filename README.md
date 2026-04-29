@@ -16,8 +16,9 @@ macOS原生简体拼音输入法存在部分常用偏旁、生僻字输入不便
 ```
 macOS-IME-Complete-Chars/
 ├── plist/                    # 可直接导入的plist文件
-│   ├── radicals.plist        # 偏旁部首（核心）
-│   ├── rare-chars.plist      # 生僻字（核心）
+│   ├── radicals.plist        # 偏旁部首（完整版）
+│   ├── rare-chars.plist      # 生僻字（完整版）
+│   ├── no-conflict.plist     # 无冲突合并版（推荐日常使用）
 │   ├── emoticons.plist       # 颜文字/符号（自动生成，未测试）
 │   └── 符号和颜文字.plist     # 作者个人习惯文件，仅供参考
 ├── data/                     # 数据源文件
@@ -39,16 +40,25 @@ macOS-IME-Complete-Chars/
 仅兼容macOS原生简体拼音输入法，支持macOS Ventura、macOS Sonoma及以上版本。
 
 ## 快速使用
-1.  下载本仓库plist目录下的文件：[**radicals.plist**](plist/radicals.plist)、[**rare-chars.plist**](plist/rare-chars.plist)
+
+### 方案一：完整版（推荐首次使用）
+1.  下载 [**radicals.plist**](plist/radicals.plist)、[**rare-chars.plist**](plist/rare-chars.plist)
 2.  打开Mac系统设置 → 键盘 → 文本输入 → 编辑... → 自定义短语
-3.  将下载的plist文件直接拖入「自定义短语」列表，即可完成导入
-4.  切换至原生简体拼音输入法，输入字符对应的拼音，即可触发（如输入ba，可打出丷）
+3.  将下载的plist文件直接拖入「自定义短语」列表
+4.  切换至原生简体拼音输入法，输入字符对应的拼音即可触发
+
+### 方案二：无冲突版（避免干扰常用字）
+1.  下载 [**no-conflict.plist**](plist/no-conflict.plist)（已移除与超高频字拼音冲突的条目）
+2.  导入方式同上
+
+**两个方案的区别**：完整版收录全部111条字符，但部分生僻字（如`鹫jiu`）可能干扰常用字（如`就jiu`）的候选排名；无冲突版移除了41条冲突字符，保留70条，不会影响日常输入体验。
 
 ## 文件说明
 - [**radicals.plist**](plist/radicals.plist)：收录52个常用偏旁，含4个原生完全无法打出的字符（攴、爿、罒、龸），其余偏旁导入后可提升候选排名，按字典标准拼音触发
 - [**rare-chars.plist**](plist/rare-chars.plist)：收录59个生僻字，导入后可提升候选排名，按字典标准拼音触发
+- [**no-conflict.plist**](plist/no-conflict.plist)：从上述两个文件中移除与超高频常用字（前100高频字）拼音冲突的41条字符后，合并生成的70条无冲突版本
 - [**emoticons.plist**](plist/emoticons.plist)：根据 [emoticons.md](emoticons.md) 自动生成的颜文字和符号文件，**未经人工测试**，仅供参考。建议先阅读 [emoticons.md](emoticons.md)，根据个人需求借助AI生成适合自己的版本
-- 「符号和颜文字.plist」：**仓库作者个人习惯文件**，收录作者常用的装饰符号及颜文字，与上方三个plist性质不同，不作为项目标准内容维护，仅供参考
+- 「符号和颜文字.plist」：**仓库作者个人习惯文件**，与上方plist性质不同，不作为项目标准内容维护，仅供参考
 - 装饰符号plist将在v1.1版本进一步完善
 
 ## 收录内容

@@ -1,8 +1,9 @@
 # 收录内容日志
 
-![Version](https://img.shields.io/badge/version-v1.0.0-blue)
+![Version](https://img.shields.io/badge/version-v1.0.5-blue)
 ![Radicals](https://img.shields.io/badge/偏旁部首-52个-orange)
 ![Rare Chars](https://img.shields.io/badge/生僻字-59个-green)
+![No Conflict](https://img.shields.io/badge/无冲突版-70个-yellowgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 本文件记录各plist文件的完整收录内容，随版本更新同步维护。
@@ -147,3 +148,4 @@
 | 版本 | 更新内容 |
 |------|----------|
 | v1.0.0 | 初始收录：52个偏旁部首、59个生僻字 |
+| v1.0.5 | 新增 no-conflict.plist：移除与前100高频字拼音冲突的41条字符，合并保留70条 |
