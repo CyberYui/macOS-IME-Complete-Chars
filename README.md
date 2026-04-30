@@ -1,6 +1,7 @@
 # macOS-IME-Complete-Chars
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Version](https://img.shields.io/badge/version-v2.0.0-blue)
 ![Platform](https://img.shields.io/badge/platform-macOS%20Ventura%2B-lightgrey?logo=apple)
 ![Radicals](https://img.shields.io/badge/偏旁部首-52个-orange)
 ![Rare Chars](https://img.shields.io/badge/生僻字-59个-green)
@@ -16,18 +17,20 @@ macOS原生简体拼音输入法存在部分常用偏旁、生僻字输入不便
 ```
 macOS-IME-Complete-Chars/
 ├── plist/                    # 可直接导入的plist文件
-│   ├── radicals.plist        # 偏旁部首（完整版）
-│   ├── rare-chars.plist      # 生僻字（完整版）
-│   ├── no-conflict.plist     # 无冲突合并版（推荐日常使用）
+│   ├── cannot-type.plist     # 实测打不出的字符（39条，推荐）
+│   ├── radicals.plist        # 偏旁部首完整版（52条）
+│   ├── rare-chars.plist      # 生僻字完整版（59条）
+│   ├── no-conflict.plist     # 无冲突合并版（70条）
 │   ├── emoticons.plist       # 颜文字/符号（自动生成，未测试）
 │   └── 符号和颜文字.plist     # 作者个人习惯文件，仅供参考
 ├── data/                     # 数据源文件
-│   ├── chinese-xinhua.json   # 权威字表数据源
+│   ├── chinese-xinhua.json   # 权威字表数据源（含实测结果）
 │   ├── missing-radicals.csv  # 筛选后的偏旁列表
 │   └── missing-chars.csv     # 筛选后的生僻字列表
 ├── docs/                     # 详细文档
 │   ├── 安装使用.md            # 导入步骤、测试方法、常见问题
 │   └── 贡献指南.md            # 如何参与贡献
+├── tools/IMEChecker/         # 实测工具（Swift命令行）
 ├── README.md                 # 项目说明（本文件）
 ├── CONTENTS.md               # 完整收录内容及版本日志
 ├── emoticons.md              # 颜文字使用指南及素材列表
@@ -41,25 +44,27 @@ macOS-IME-Complete-Chars/
 
 ## 快速使用
 
-### 方案一：完整版（推荐首次使用）
-1.  下载 [**radicals.plist**](plist/radicals.plist)、[**rare-chars.plist**](plist/rare-chars.plist)
-2.  打开Mac系统设置 → 键盘 → 文本输入 → 编辑... → 自定义短语
-3.  将下载的plist文件直接拖入「自定义短语」列表
-4.  切换至原生简体拼音输入法，输入字符对应的拼音即可触发
+### 方案一：完整版
+下载 [**radicals.plist**](plist/radicals.plist)（偏旁部首）和 [**rare-chars.plist**](plist/rare-chars.plist)（生僻字），包含全部111条字符。
 
 ### 方案二：无冲突版（避免干扰常用字）
-1.  下载 [**no-conflict.plist**](plist/no-conflict.plist)（已移除与超高频字拼音冲突的条目）
-2.  导入方式同上
+下载 [**no-conflict.plist**](plist/no-conflict.plist)，已移除与超高频字拼音冲突的41条字符，保留70条。
 
-**两个方案的区别**：完整版收录全部111条字符，但部分生僻字（如`鹫jiu`）可能干扰常用字（如`就jiu`）的候选排名；无冲突版移除了41条冲突字符，保留70条，不会影响日常输入体验。
+### 方案三：精简版（仅收录真正打不出的字符）
+下载 [**cannot-type.plist**](plist/cannot-type.plist)，经实测验证，仅收录39条原生输入法完全无法打出的字符，零干扰。
+
+导入方式：打开 Mac 系统设置 → 键盘 → 文本输入 → 编辑... → 自定义短语，将 plist 文件直接拖入列表。
 
 ## 文件说明
-- [**radicals.plist**](plist/radicals.plist)：收录52个常用偏旁，含4个原生完全无法打出的字符（攴、爿、罒、龸），其余偏旁导入后可提升候选排名，按字典标准拼音触发
-- [**rare-chars.plist**](plist/rare-chars.plist)：收录59个生僻字，导入后可提升候选排名，按字典标准拼音触发
-- [**no-conflict.plist**](plist/no-conflict.plist)：从上述两个文件中移除与超高频常用字（前100高频字）拼音冲突的41条字符后，合并生成的70条无冲突版本
-- [**emoticons.plist**](plist/emoticons.plist)：根据 [emoticons.md](emoticons.md) 自动生成的颜文字和符号文件，**未经人工测试**，仅供参考。建议先阅读 [emoticons.md](emoticons.md)，根据个人需求借助AI生成适合自己的版本
-- 「符号和颜文字.plist」：**仓库作者个人习惯文件**，与上方plist性质不同，不作为项目标准内容维护，仅供参考
-- 装饰符号plist将在v1.1版本进一步完善
+
+> **注意**：当前所有 plist 文件均基于初次实测结果生成，实测过程中存在约 5-10% 的 OCR 误判率，且测试环境中已导入过部分字符，可能影响结果准确性。我们将于近期重新进行完整实测，届时更新并发布最终推荐版本。**建议暂时以 `cannot-type.plist` 作为参考，而非最终定论。**
+
+- [**cannot-type.plist**](plist/cannot-type.plist)：经IMEChecker实测验证，收录39条原生输入法完全无法打出的字符（**初次实测版，准确性待二次验证**）
+- [**radicals.plist**](plist/radicals.plist)：收录52个常用偏旁，按字典标准拼音触发
+- [**rare-chars.plist**](plist/rare-chars.plist)：收录59个生僻字，导入后可提升候选排名
+- [**no-conflict.plist**](plist/no-conflict.plist)：移除与前100高频字拼音冲突的41条字符后，合并保留70条
+- [**emoticons.plist**](plist/emoticons.plist)：根据 [emoticons.md](emoticons.md) 自动生成的颜文字和符号，**未经人工测试**
+- 「符号和颜文字.plist」：**仓库作者个人习惯文件**，仅供参考
 
 ## 收录内容
 完整的字符收录列表及版本更新记录，请查阅 [CONTENTS.md](CONTENTS.md)。

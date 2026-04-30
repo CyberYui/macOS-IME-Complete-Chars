@@ -1,6 +1,7 @@
 # 收录内容日志
 
-![Version](https://img.shields.io/badge/version-v1.0.5-blue)
+![Version](https://img.shields.io/badge/version-v2.0.0-blue)
+![Cannot Type](https://img.shields.io/badge/实测打不出-39个-red)
 ![Radicals](https://img.shields.io/badge/偏旁部首-52个-orange)
 ![Rare Chars](https://img.shields.io/badge/生僻字-59个-green)
 ![No Conflict](https://img.shields.io/badge/无冲突版-70个-yellowgreen)
@@ -149,3 +150,52 @@
 |------|----------|
 | v1.0.0 | 初始收录：52个偏旁部首、59个生僻字 |
 | v1.0.5 | 新增 no-conflict.plist：移除与前100高频字拼音冲突的41条字符，合并保留70条 |
+| v1.1.0 | 新增 cannot-type.plist：经IMEChecker实测验证，收录39条原生完全打不出的字符 |
+| v2.0.0 | 新增 IMEChecker 实测工具（Swift命令行），实现 Agent AI 自动化实测；cannot-type.plist 基于实测数据生成 |
+## cannot-type.plist — 实测打不出的字符
+
+经 IMEChecker 工具实测验证，当前版本收录 **39** 个原生输入法完全无法打出的字符。
+
+| 字符 | 触发拼音 | 类型 | 笔画 |
+|------|----------|------|------|
+| 丨 | gun | 偏旁 | 1 |
+| 丶 | zhu | 偏旁 | 1 |
+| 丿 | pie | 偏旁 | 1 |
+| 亅 | jue | 偏旁 | 1 |
+| 亠 | tou | 偏旁 | 2 |
+| 冂 | jiong | 偏旁 | 2 |
+| 冖 | mi | 偏旁 | 2 |
+| 冫 | bing | 偏旁 | 2 |
+| 匚 | fang | 偏旁 | 2 |
+| 匸 | xi | 偏旁 | 2 |
+| 厶 | si | 偏旁 | 2 |
+| 丷 | ba | 偏旁 | 2 |
+| 彳 | chi | 偏旁 | 3 |
+| 彡 | shan | 偏旁 | 3 |
+| 廴 | yin | 偏旁 | 3 |
+| 廾 | gong | 偏旁 | 3 |
+| 彐 | ji | 偏旁 | 3 |
+| 忄 | xin | 偏旁 | 3 |
+| 氵 | shui | 偏旁 | 3 |
+| 灬 | huo | 偏旁 | 4 |
+| 纟 | si | 偏旁 | 3 |
+| 耂 | lao | 偏旁 | 4 |
+| 衤 | yi | 偏旁 | 5 |
+| 阝 | fu | 偏旁 | 3 |
+| 亻 | ren | 偏旁 | 2 |
+| 宀 | mian | 偏旁 | 3 |
+| 屮 | che | 偏旁 | 3 |
+| 巛 | chuan | 偏旁 | 3 |
+| 癶 | bo | 偏旁 | 5 |
+| 饣 | shi | 偏旁 | 3 |
+| 龸 | cuan | 偏旁 | 6 |
+| 羃 | mi | 生僻字 | 14 |
+| 昱 | yu | 生僻字 | 9 |
+| 煜 | yu | 生僻字 | 13 |
+| 琬 | wan | 生僻字 | 13 |
+| 斝 | jia | 生僻字 | 13 |
+| 嵎 | yu | 生僻字 | 12 |
+| 鹬 | yu | 生僻字 | 19 |
+| 蘅 | heng | 生僻字 | 19 |
+
+---
