@@ -52,6 +52,30 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
+		<string>凵</string>
+		<key>shortcut</key>
+		<string>kan</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>刂</string>
+		<key>shortcut</key>
+		<string>dao</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>勹</string>
+		<key>shortcut</key>
+		<string>bao</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>匕</string>
+		<key>shortcut</key>
+		<string>bi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
 		<string>匚</string>
 		<key>shortcut</key>
 		<string>fang</string>
@@ -61,6 +85,12 @@
 		<string>匸</string>
 		<key>shortcut</key>
 		<string>xi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>卩</string>
+		<key>shortcut</key>
+		<string>jie</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -112,9 +142,21 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>氵</string>
+		<string>扌</string>
 		<key>shortcut</key>
-		<string>shui</string>
+		<string>shou</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>攴</string>
+		<key>shortcut</key>
+		<string>pu</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>攵</string>
+		<key>shortcut</key>
+		<string>pu</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -124,9 +166,33 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
+		<string>爿</string>
+		<key>shortcut</key>
+		<string>qiang</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>犭</string>
+		<key>shortcut</key>
+		<string>quan</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>礻</string>
+		<key>shortcut</key>
+		<string>shi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
 		<string>纟</string>
 		<key>shortcut</key>
 		<string>si</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>罒</string>
+		<key>shortcut</key>
+		<string>wang</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -136,9 +202,39 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
+		<string>艸</string>
+		<key>shortcut</key>
+		<string>cao</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>虍</string>
+		<key>shortcut</key>
+		<string>hu</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
 		<string>衤</string>
 		<key>shortcut</key>
 		<string>yi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>讠</string>
+		<key>shortcut</key>
+		<string>yan</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>豸</string>
+		<key>shortcut</key>
+		<string>zhi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>钅</string>
+		<key>shortcut</key>
+		<string>jin</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -160,6 +256,12 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
+		<string>尢</string>
+		<key>shortcut</key>
+		<string>you</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
 		<string>屮</string>
 		<key>shortcut</key>
 		<string>che</string>
@@ -169,6 +271,12 @@
 		<string>巛</string>
 		<key>shortcut</key>
 		<string>chuan</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>疒</string>
+		<key>shortcut</key>
+		<string>ne</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -184,15 +292,39 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
+		<string>糸</string>
+		<key>shortcut</key>
+		<string>mi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
 		<string>龸</string>
 		<key>shortcut</key>
 		<string>cuan</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>羃</string>
+		<string>泠</string>
 		<key>shortcut</key>
-		<string>mi</string>
+		<string>ling</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>杳</string>
+		<key>shortcut</key>
+		<string>yao</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>淼</string>
+		<key>shortcut</key>
+		<string>miao</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>鑫</string>
+		<key>shortcut</key>
+		<string>xin</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -202,9 +334,75 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
+		<string>旻</string>
+		<key>shortcut</key>
+		<string>min</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>昊</string>
+		<key>shortcut</key>
+		<string>hao</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>晟</string>
+		<key>shortcut</key>
+		<string>sheng</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
 		<string>煜</string>
 		<key>shortcut</key>
 		<string>yu</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>熠</string>
+		<key>shortcut</key>
+		<string>yi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>珺</string>
+		<key>shortcut</key>
+		<string>jun</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>琰</string>
+		<key>shortcut</key>
+		<string>yan</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>璟</string>
+		<key>shortcut</key>
+		<string>jing</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>瑾</string>
+		<key>shortcut</key>
+		<string>jin</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>玥</string>
+		<key>shortcut</key>
+		<string>yue</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>珩</string>
+		<key>shortcut</key>
+		<string>heng</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>琛</string>
+		<key>shortcut</key>
+		<string>chen</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -214,27 +412,69 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>斝</string>
+		<string>瑗</string>
 		<key>shortcut</key>
-		<string>jia</string>
+		<string>yuan</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>嵎</string>
+		<string>瑜</string>
 		<key>shortcut</key>
 		<string>yu</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>鹬</string>
+		<string>甑</string>
 		<key>shortcut</key>
-		<string>yu</string>
+		<string>zeng</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>蘅</string>
+		<string>汀</string>
 		<key>shortcut</key>
-		<string>heng</string>
+		<string>ting</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>渚</string>
+		<key>shortcut</key>
+		<string>zhu</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>潋</string>
+		<key>shortcut</key>
+		<string>lian</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>滟</string>
+		<key>shortcut</key>
+		<string>yan</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>漪</string>
+		<key>shortcut</key>
+		<string>yi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>澹</string>
+		<key>shortcut</key>
+		<string>dan</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>蕙</string>
+		<key>shortcut</key>
+		<string>hui</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>荻</string>
+		<key>shortcut</key>
+		<string>di</string>
 	</dict>
 </array>
 </plist>

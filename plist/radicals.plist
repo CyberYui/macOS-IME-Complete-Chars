@@ -160,12 +160,6 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>氵</string>
-		<key>shortcut</key>
-		<string>shui</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
 		<string>灬</string>
 		<key>shortcut</key>
 		<string>huo</string>
@@ -205,12 +199,6 @@
 		<string>耂</string>
 		<key>shortcut</key>
 		<string>lao</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>艹</string>
-		<key>shortcut</key>
-		<string>cao</string>
 	</dict>
 	<dict>
 		<key>phrase</key>

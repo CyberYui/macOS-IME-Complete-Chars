@@ -316,12 +316,6 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>鹫</string>
-		<key>shortcut</key>
-		<string>jiu</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
 		<string>鹬</string>
 		<key>shortcut</key>
 		<string>yu</string>

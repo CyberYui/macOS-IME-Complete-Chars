@@ -1,10 +1,10 @@
 # macOS-IME-Complete-Chars
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-v2.0.0-blue)
+![Version](https://img.shields.io/badge/version-v2.2.0-blue)
 ![Platform](https://img.shields.io/badge/platform-macOS%20Ventura%2B-lightgrey?logo=apple)
-![Radicals](https://img.shields.io/badge/偏旁部首-52个-orange)
-![Rare Chars](https://img.shields.io/badge/生僻字-59个-green)
+![Cannot Type](https://img.shields.io/badge/推荐版-79个-red)
+![Radicals](https://img.shields.io/badge/偏旁部首-50个-orange)
+![Rare Chars](https://img.shields.io/badge/生僻字-58个-green)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 补全macOS原生简体拼音输入法中，《现代汉语词典》《通用规范汉字表》有、系统无的生僻字和偏旁部首，提供可直接导入的plist文件，无需安装第三方输入法，轻量便捷。
@@ -44,25 +44,25 @@ macOS-IME-Complete-Chars/
 
 ## 快速使用
 
-### 方案一：完整版
-下载 [**radicals.plist**](plist/radicals.plist)（偏旁部首）和 [**rare-chars.plist**](plist/rare-chars.plist)（生僻字），包含全部111条字符。
+### 方案一：精简版（推荐）
+下载 [**cannot-type.plist**](plist/cannot-type.plist)，收录50个偏旁部首 + 29个常用生僻字，共79条，经实测验证均为原生输入法无法打出的字符。
 
-### 方案二：无冲突版（避免干扰常用字）
-下载 [**no-conflict.plist**](plist/no-conflict.plist)，已移除与超高频字拼音冲突的41条字符，保留70条。
+### 方案二：完整版
+分别下载 [**radicals.plist**](plist/radicals.plist)（50条偏旁）和 [**rare-chars.plist**](plist/rare-chars.plist)（58条生僻字）。
 
-### 方案三：精简版（仅收录真正打不出的字符）
-下载 [**cannot-type.plist**](plist/cannot-type.plist)，经实测验证，仅收录39条原生输入法完全无法打出的字符，零干扰。
+### 方案三：无冲突版
+下载 [**no-conflict.plist**](plist/no-conflict.plist)，已移除与超高频字拼音冲突的条目。
 
 导入方式：打开 Mac 系统设置 → 键盘 → 文本输入 → 编辑... → 自定义短语，将 plist 文件直接拖入列表。
 
 ## 文件说明
 
-> **注意**：当前所有 plist 文件均基于初次实测结果生成，实测过程中存在约 5-10% 的 OCR 误判率，且测试环境中已导入过部分字符，可能影响结果准确性。我们将于近期重新进行完整实测，届时更新并发布最终推荐版本。**建议暂时以 `cannot-type.plist` 作为参考，而非最终定论。**
+> **说明**：当前 plist 文件基于 IMEChecker 工具在清空自定义短语后的实测结果生成，数据较初版更为准确。由于 OCR 识别存在一定局限性，个别字符的判断结果可能与实际情况略有出入，欢迎通过 Issue 反馈。
 
-- [**cannot-type.plist**](plist/cannot-type.plist)：经IMEChecker实测验证，收录39条原生输入法完全无法打出的字符（**初次实测版，准确性待二次验证**）
-- [**radicals.plist**](plist/radicals.plist)：收录52个常用偏旁，按字典标准拼音触发
-- [**rare-chars.plist**](plist/rare-chars.plist)：收录59个生僻字，导入后可提升候选排名
-- [**no-conflict.plist**](plist/no-conflict.plist)：移除与前100高频字拼音冲突的41条字符后，合并保留70条
+- [**cannot-type.plist**](plist/cannot-type.plist)：**推荐导入**。收录50个实测打不出的偏旁部首 + 29个常用生僻字，共79条
+- [**radicals.plist**](plist/radicals.plist)：收录50个实测打不出的偏旁部首（完整版）
+- [**rare-chars.plist**](plist/rare-chars.plist)：收录58个实测打不出的生僻字（完整版）
+- [**no-conflict.plist**](plist/no-conflict.plist)：移除与前100高频字拼音冲突的字符后合并保留的版本
 - [**emoticons.plist**](plist/emoticons.plist)：根据 [emoticons.md](emoticons.md) 自动生成的颜文字和符号，**未经人工测试**
 - 「符号和颜文字.plist」：**仓库作者个人习惯文件**，仅供参考
 
