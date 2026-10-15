@@ -5,3 +5,6 @@
 
 # 中间文件/临时文件
 tmp/
+.claude/
+AGENTS.md
+CLAUDE.md
